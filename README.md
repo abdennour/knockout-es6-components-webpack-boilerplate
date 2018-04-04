@@ -4,13 +4,20 @@ A Single Page Application boilerplate using Knockout as organizational framework
 
 - Node 8.11.1 LTS
 
-# Start application
+# Getting Started
+
+**Install dependencies**
+
+```sh
+npm install
+```
+**Start application**
 
 ```sh
 npm start
 ```
 
-# Build application
+**Build application**
 
 ```sh
 npm run build
