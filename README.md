@@ -1,6 +1,6 @@
 # Prerequiestes
 
-- Node 8.5.0 or later (`nvm install 8.5.0 && nvm use 8.5.0`)
+- Node 8.11.1 LTS
 
 # Start application
 
