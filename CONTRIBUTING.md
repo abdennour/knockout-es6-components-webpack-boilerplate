@@ -10,6 +10,12 @@
 npm test
 ```
 
+**Realtime Watching tests**
+
+```
+npm run test:watch
+```
+
 **Watch test**
 
 ```
