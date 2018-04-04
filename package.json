@@ -1,0 +1,26 @@
+{
+  "name": "knockout-es6-components-webpack-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate Knockout , ES6 classes components driven and webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config webpack/config.js --open",
+    "build": "webpack --mode production --config webpack/config.js",
+    "help": "Install nvm, and switch to Node 8.5.0 : nvm install 8.5.0",
+    "test": "test -e src"
+  },
+  "author": "Abdennour TOUMI <in.abdennoor.com>",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "knockout": "^3.4.2"
+  }
+}
