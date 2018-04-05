@@ -1,11 +1,13 @@
 import ko from 'knockout';
 
 class App {
-  constructor() {
+  constructor(params) {
+    this.$params = params;
     this.message = ko.observable('');
   }
+
   sayHello() {
-    this.message('Hello World!');
+    this.message(`Hello ${this.$params.helloTo}!`);
   }
 }
 

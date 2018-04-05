@@ -5,7 +5,7 @@ import './App.css';
 const App = {
   template,
   viewModel,
-  component: 'App'
+  component: 'app'
 };
 
 export default App;

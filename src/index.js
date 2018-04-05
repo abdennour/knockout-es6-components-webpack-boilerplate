@@ -4,5 +4,6 @@ import componentsRegistry from './registry';
 componentsRegistry.forEach(c => {
   const { component, ...rest } = c;
   ko.components.register(component, rest);
-  ko.applyBindings(new rest.viewModel());
 });
+
+ko.applyBindings();
