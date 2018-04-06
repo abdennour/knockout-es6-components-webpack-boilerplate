@@ -1,6 +1,6 @@
 {
   "name": "knockout-es6-components-webpack-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Boilerplate Knockout , ES6 classes components driven and webpack",
   "main": "index.js",
   "scripts": {
