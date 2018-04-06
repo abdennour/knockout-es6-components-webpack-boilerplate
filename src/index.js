@@ -7,4 +7,3 @@ componentsRegistry.forEach(c => {
 });
 
 ko.applyBindings();
-window.ko = ko;
