@@ -46,8 +46,8 @@ my-app
 └── src
     └── ko
         └── ViewModel.js
-    └── App.viewModel.js
-    └── App.template.js
+    └── App.vm.js
+    └── App.tmpl.js
     └── App.component.js
     └── App.spec.js
     └── App.css
@@ -77,7 +77,7 @@ my-app
 }
 ```
 
-**src/[MyComponent].vm.js** is the ViewModel class of the component *src/[MyComponent].component.js*.
+**src/[MyComponent].vm.js** is the ViewModel class of the component *src/[MyComponent].component.js* and it should inherit from *src/ko/ViewModel.js*.
 
 **src/[MyComponent].tmpl.html** is the HTML template of the component *src/[MyComponent].component.js*.
 
