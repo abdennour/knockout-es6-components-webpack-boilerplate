@@ -1,11 +1,11 @@
-import viewModel from './App.viewModel';
-import template from './App.template.html';
+import viewModel from './App.vm';
+import template from './App.tmpl.html';
 import './App.css';
 
 const App = {
   template,
   viewModel,
-  component: 'App'
+  component: 'app'
 };
 
 export default App;

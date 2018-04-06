@@ -25,6 +25,13 @@ npm run build
 
 The output is `dist/` directory
 
+**Run unit-tests**
+
+```sh
+npm test
+# or "npm run test:watch" to watch status of unit-tests in realtime
+```
+
 
 # Boilerplate hierarchy
 
@@ -37,6 +44,8 @@ my-app
 ├── public
 │   └── index.html
 └── src
+    └── ko
+        └── ViewModel.js
     └── App.viewModel.js
     └── App.template.js
     └── App.component.js
@@ -44,12 +53,15 @@ my-app
     └── App.css
     └── registry.js
     └── index.js
+    └── setupTests.js    
 └── webpack
     └── config.js    
 
 ```
 
 **public/index.html** is the single page of the whole application
+
+**src/ko/ViewModel.js** An abstract class that any Knockout viewmodel implementation should extend. It is a decorator class and it injects the parameters of the component inside the "this" of the viewmodel.
 
 **src/registry.js** where you import all components and register them into `registry` collection. So basically, this file will be updated with the creation of any new KO component.
 
@@ -60,10 +72,17 @@ my-app
 ```js
 {
   component, // name of component as string
-  viewModel, // import of src/[MyComponent].viewModel.js
-  template   // import of src/[MyComponent].template.html
+  viewModel, // import of src/[MyComponent].vm.js
+  template   // import of src/[MyComponent].tmpl.html
 }
 ```
+
+**src/[MyComponent].vm.js** is the ViewModel class of the component *src/[MyComponent].component.js*.
+
+**src/[MyComponent].tmpl.html** is the HTML template of the component *src/[MyComponent].component.js*.
+
+
+**src/setupTests** It makes some test utilities globally, then unit-tests file can access to them directly with any import statement (.e.g: expect). It also create test utilities for Knockout files (.e.g: `mount` function to test Knockout templates)
 
 # Reuse the boilerplate
 

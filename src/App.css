@@ -1,11 +1,20 @@
+html, body {
+  height: 100%;
+}
+
+app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .hello-heading {
-  color: #8cd123;
 }
 
 .hello-btn {
   color: #fff;
-  background-color: #8cd123;
-  border-color: #8cd123;
   display: inline-block;
   font-weight: 400;
   line-height: 1.25;
